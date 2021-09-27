@@ -5,6 +5,10 @@ in the original string. Ignore capitalization when determining if a character is
 
 NOTES:
 don't forget lowercase it.
+
+best voted solution:
+def duplicate_encode(word):
+    return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
 """
 
 
